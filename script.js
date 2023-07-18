@@ -27,13 +27,13 @@ $(document).ready(function() {
         0: {
           items: 1.5,
         },
-        600: {
+        300: {
           items: 2.5,
         },
-        900: {
+        600: {
           items: 3.5,
         },
-        1200: {
+        900: {
           items: 4.5,
         },
       },

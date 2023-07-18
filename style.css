@@ -355,7 +355,6 @@ header {
 }
 
 /* hot deals sec styling */
-
 .deals {
   display: flex;
   flex-direction: column;
@@ -633,6 +632,8 @@ footer .partners h1 {
   margin-bottom: 15px;
 }
 
+
+/* Desktop, laptop and tablet responsiveness */
 @media screen and (max-width: 1365px) {
   .nav a {
     margin: 0 5px;
@@ -643,4 +644,196 @@ footer .partners h1 {
     font-size: 14px;
     margin: 0 2px;
   }
+  .hero-nav {
+    padding: 5px 4%;
+  }
+  .hero-content {
+    padding-left: 5%;
+  }
+  .nav {
+    padding: 15px 4%;
+  }
+  .featured {
+    padding: 30px 4%;
+  }
+  .deals {
+    padding: 30px 4%;
+  }
+  .categories {
+    padding: 30px 4%;
+  }
+  .why {
+    padding: 30px 4%;
+  }
+  footer {
+    padding: 30px 4%;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .access-box a,
+.access-nav-bottom a, .access-nav-bottom select {
+  padding-right: 8px;
+  font-size: 13px;
+  letter-spacing: 0.00938rem;
+}
+.hero-nav-bar .logo{
+  width: 100px;
+}
+.hero-nav-bar .logo img{
+  width: 100%;
+}
+.hero-nav .search {
+  width: 60%;
+}
+
+.hero-nav input {
+  padding: 7px;
+  width: 65%;
+}
+
+.hero-nav button {
+  padding: 7px;
+  width: 20%;
+}
+
+.hero-nav .icons .fa {
+  font-size: 20px;
+  padding-left: 8px;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  padding: 15px 4% 8px;
+}
+.nav a {
+  color: var(--secondary-color);
+  font-size: 10px;
+  letter-spacing: 0.00938rem;
+  padding: 5px;
+  margin: 0 3px;
+}
+
+.nav a:first-child {
+  width: auto;
+}
+.hero-content {
+  top: 200px;
+  padding-left: 4%;
+}
+
+.hero-content h1 {
+  font-size: 35px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  width: 400px;
+  margin: 20px 0;
+}
+
+.hero-content button {
+  padding: 15px 10px;
+  width: 150px;
+}
+
+/* featured section styling */
+.featured-text h2 {
+  font-size: 25px;
+}
+
+.featured-text p {
+  font-size: 16px;
+  margin: 10px 0;
+  width: 250px;
+}
+
+.featured-text .btn {
+  font-size: 12px;
+  padding: 10px 5px;
+  width: 100px;
+}
+.featured-content .featured-box .featured-text p {
+  font-size: 12px;
+}
+
+.featured-content .featured-box .featured-text h3 {
+  font-size: 16px;
+}
+/* hot deals sec styling */
+.deals-box .deals-img{
+  height: 150px;
+}
+.deals-box .deals-img img{
+  height: 150px;
+}
+.deals-box .deals-text p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.deals-box .deals-text h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.categories .dir-arrows .fa {
+  font-size: 25px;
+}
+
+/* Why section styling */
+
+.why .why-text h2 {
+  font-size: 24px;
+}
+
+.why .why-text p {
+  font-size: 16px;
+  margin: 15px 0;
+  width: 310px;
+}
+
+.why .why-text button {
+  font-size: 0.875rem;
+  padding: 10px;
+  width: 150px;
+}
+
+.why .why-box {
+  padding: 10px;
+  border-radius: 5px;
+}
+.why-box p {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+
+  .why-box h3{
+    font-size: 16px;
+  }
+
+.why .why-box .span1 {
+    border-radius: 3px;
+    font-size: 14px;
+}
+.why .why-box .span2 {
+    font-size: 14px;
+}
+
+/* Footer section styling */
+footer .foot-top div {
+  margin: 0 10px;
+}
+
+footer .foot-top a {
+  font-size: 14px;
+}
+
+footer .foot-top h3 {
+  font-size: 16px;
+}
+footer .partners h1 {
+  font-size: 18px;
+}
 }
