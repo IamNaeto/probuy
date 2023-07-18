@@ -106,7 +106,7 @@ header {
   padding: 5px 8%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .hero-nav-up {
@@ -162,13 +162,18 @@ header {
 .nav {
   position: fixed;
   width: 100%;
-  top: 100px;
+  top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  z-index: 1;
+  padding: 15px 0 16px;
+  z-index: 4;
 }
+
+.nav.scrolled {
+    background-color: var(--secondary-bg-clr)
+  }
 
 .nav a {
   color: var(--secondary-color);
@@ -401,12 +406,19 @@ header {
 .categories .dir-arrows .fa {
   font-size: 40px;
   cursor: pointer;
+  transition: transform 1s;
 }
 
+.categories .dir-arrows .fa:hover{
+    transform: scale(1.2);
+}
 .catergories-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .catergories-content div {
@@ -416,9 +428,14 @@ header {
   align-items: center;
   justify-content: center;
   margin: 15px;
+  transition: all 0.3s ease;
 }
 
-.catergories-content p {
+.catergories-content:hover .cat-box{
+    transform: scale(1.05);
+}
+
+.categories-content .cat-box p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -427,16 +444,7 @@ header {
   text-align: center;
   color: var(--primary-color);
   margin-top: 10px;
-}
-
-.catergories-content h3 {
-  font-size: 1.3125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.00938rem;
-  color: var(--primary-color);
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Why section styling */
@@ -492,18 +500,35 @@ header {
   border: 2px solid var(--btn-sec-bg);
 }
 
-.why why-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .why .why-box {
   display: flex;
   align-items: center;
   padding: 10px;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
+}
+
+.why-box p {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    margin: 10px 0;
+
+  }
+
+.why .why-box .span1 {
+    background-color: #2E8B57;
+    color: var(--primary-bg-clr);
+    padding: 5px;
+    border-radius: 3px;
+}
+.why .why-box .span2 {
+    background-color: #F00;
+    color: var(--primary-bg-clr);
+    padding: 5px;
+    border-radius: 3px;
 }
 
 .why .why-box div:nth-child(2) {

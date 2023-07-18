@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROBUY</title>
-  <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -53,7 +58,7 @@
         </div>
       </div>
 
-      <div class="nav">
+      <div class="nav" id="navbar">
         <a href="">Home</a>
         <a href="">Saved</a>
         <a href="">Electronics</a>
@@ -134,22 +139,54 @@
       </div>
     </div>
 
-    <div class="catergories-content">
-      <div>
+    <div class="categories-content owl-carousel" id="carousel">
+      <div class="cat-box">
         <img src="img/categories-1.png" alt="">
         <p>Home Appliances</p>
       </div>
-      <div>
+      <div class="cat-box">
         <img src="img/categories-2.png" alt="">
         <p>Phones & Tablets</p>
       </div>
-      <div>
+      <div class="cat-box">
         <img src="img/categories-3.png" alt="">
         <p>Televisions</p>
       </div>
-      <div>
+      <div class="cat-box">
         <img src="img/categories-4.png" alt="">
         <p>Headphones</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-5.png" alt="">
+        <p>Video Games</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-6.png" alt="">
+        <p>Cameras</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-7.png" alt="">
+        <p>CCTV</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-8.png" alt="">
+        <p>Bluetooth Speakers</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-9.png" alt="">
+        <p>Kitchen Appliances</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-10.png" alt="">
+        <p>Drones</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-11.png" alt="">
+        <p>Office Equipment</p>
+      </div>
+      <div class="cat-box">
+        <img src="img/categories-12.png" alt="">
+        <p>Laptops</p>
       </div>
     </div>
   </section>
@@ -170,7 +207,7 @@
         <div>
           <h3>Affordable Prices</h3>
           <p>Get great deals on all our products.</p>
-          <span>Sale</span> <span>Limited Stock</span>
+          <span class="span1">Sale</span> <span class="span2">Limited Stock</span>
         </div>
       </div>
       <div class="why-box">
@@ -244,6 +281,15 @@
     </div>
 
   </footer>
+
+    <!-- Owl Carousel JS and jQuery (required) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- My Default JS File -->
+    <script src="script.js"></script>
+      
+  
 </body>
 
 </html>
