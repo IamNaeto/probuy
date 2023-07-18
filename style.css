@@ -167,7 +167,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 15px 0 16px;
+  padding: 15px 8%;
   z-index: 4;
 }
 
@@ -253,6 +253,10 @@ header {
   margin: 30px 0;
 }
 
+.featured-text{
+  width: 45;
+}
+
 .featured-text h2 {
   font-size: 2.1875rem;
   font-style: normal;
@@ -309,9 +313,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 55%;
 }
 
-.featured-content div {
+.featured-content .featured-box {
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -319,22 +324,34 @@ header {
   justify-content: center;
 }
 
-.featured-content p {
+.featured-content .featured-box .featured-img{
+  width: 100%;
+}
+
+.featured-content .featured-box .featured-img img{
+  width: 100%;
+}
+
+.featured-content .featured-box .featured-text p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.00938rem;
   color: var(--primary-color);
+  text-align: center;
+  margin: 0;
 }
 
-.featured-content h3 {
+.featured-content .featured-box .featured-text h3 {
   font-size: 1.3125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.00938rem;
   color: var(--primary-color);
+  text-align: center;
+  margin: 0;
 }
 
 /* hot deals sec styling */
@@ -351,20 +368,28 @@ header {
 
 .deals-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-.deals-content div {
-  width: 23%;
+.deals-content .deals-box {
+  width: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 15px;
+  justify-content: space-between;
+  margin: 15px 0;
 }
 
-.deals-content p {
+.deals-box .deals-img{
+  width: 100%;
+  height: 200px;
+}
+.deals-box .deals-img img{
+  width: 100%;
+  height: 200px;
+}
+.deals-box .deals-text p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -375,7 +400,7 @@ header {
   margin-top: 10px;
 }
 
-.deals-content h3 {
+.deals-box .deals-text h3 {
   font-size: 1.3125rem;
   font-style: normal;
   font-weight: 700;
@@ -569,6 +594,7 @@ footer .foot-top a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.15px;
+  transition: 1s;
 }
 
 footer .foot-top a:hover {
@@ -588,6 +614,7 @@ footer .foot-top h3 {
 footer .foot-top li {
   list-style-type: none;
   margin: 10px 0;
+  transition: 1s;
 }
 
 footer .partners {
@@ -604,4 +631,16 @@ footer .partners h1 {
   line-height: normal;
   letter-spacing: 0.15px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1365px) {
+  .nav a {
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .nav a {
+    font-size: 14px;
+    margin: 0 2px;
+  }
 }
