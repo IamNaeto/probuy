@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  /* border: 2px solid red; */
+}
+
+a {
+  text-decoration: none
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #FFF5EE;
+  --tertiary-color: var(--secondary-bg-clr);
+  --btn-pri-bg: #F25829;
+  --btn-sec-bg: #242866;
+  --primary-bg-clr: #F2F2F2;
+  --secondary-bg-clr: #242866;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+header {
+    width: 100%;
+    position: relative;
+  }
+
+.hero-checkout {
+    width: 100%;
+    position: relative;
+  }
+
+  .checkout-nav {
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 15px 8%;
+    z-index: 4;
+    background-color: var(--secondary-bg-clr);
+  }
+  .checkout-nav a, .checkout-nav span {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding: 5px;
+    margin: 0 20px;
+    transition: 0.3s;
+  }
+  
+
+  /* checkout section styling */
+  .main-checkout{
+    position: relative;
+    top: 150px;
+    padding: 30px 8%;
+    width: 100%;
+    display: flex;
+  }
+
+  .checkout-left{
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  .checkout-left .fa{
+    color: #D2D2D2;
+    font-size: 24px;
+  }
+
+  .info{
+    padding: 3%;
+    background-color: var(--primary-bg-clr);
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+
+  .info h2, .payment-method h2, .voucher h3{
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding: 1rem 0;
+  }
+  .info h3, .payment-method form label{
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding: 0.5rem 0;
+  }
+  .info p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding: 0.5rem 0;
+  }
+
+  .info form, .payment-method form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .info form input, .info form select{
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 1px solid #212966;
+    width: 100%;
+    color: #5E5E5E;
+  }
+
+  .info form button, .payment-method form button{
+    width: 50%;
+    padding: 0.8rem 0.125rem;
+    border-radius: 0.5rem;
+    background-color: var(--btn-pri-bg);
+    border: 2px solid var(--btn-pri-bg);
+    color: var(--primary-bg-clr);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07813rem;
+    cursor: pointer;
+    text-align: centers;
+  }
+
+  .info form button:hover, .payment-method form button:hover{
+    background-color: transparent;
+    border: 2px solid var(--btn-pri-bg);
+    color: var(--btn-pri-bg);
+    transition: 1s;
+  }
+  .payment-method{
+    padding: 3%;
+    background-color: var(--primary-bg-clr);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 95%;
+  }
+
+  .payment-method hr{
+    margin-bottom: 2rem;
+  }
+  .payment-method div{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .payment-method p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .payment-method span{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    padding:  0 1rem;
+  }
+  .payment-method form button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .payment-method form div input[type='radio']{
+    color: var(--btn-pri-bg);
+    background-color: var(--btn-pri-bg);
+  }
+
+  .voucher{
+    padding: 3%;
+    background-color: var(--primary-bg-clr);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 70%;
+  }
+
+  .voucher h4{
+    padding: 1.3rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+  }
+
+  .voucher p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+    color: #2E8B57;
+    padding: 0.5rem 0;
+  }
+
+  .voucher button{
+    padding: 1rem;
+    background-color: var(--btn-sec-bg);
+    border-radius: 0.5rem;
+    border: 2px solid var(--btn-sec-bg);
+    width: 90%;
+    margin: 0 5%;
+    color: var(--primary-bg-clr);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07813rem;
+    cursor: pointer;
+  }
+
+  .voucher button:hover{
+    background-color: transparent;
+    border: 2px solid var(--btn-sec-bg);
+    color: var(--btn-sec-bg);
+    transition: 1s;
+  }
+
+  .checkout-right{
+    width: 48%;
+  }
+
+  footer{
+    position: relative;
+    top: 150px;
+  }
