@@ -160,6 +160,10 @@ header {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .nav {
   position: fixed;
   width: 100%;
