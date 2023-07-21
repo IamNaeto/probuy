@@ -57,10 +57,10 @@
       </div>
 
       <div class="checkout-nav" id="checkoutNav">
-        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a> <span>|</span>
+        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i> Back To Home</a> <span>|</span>
         <a href=""> Category:</a>
-        <a href="">Electronics </a> <span>></span>
-        <a href="">Laptop Accessories</a> <span>></span>
+        <a href="">Electronics </a> <span><</span>
+        <a href="">Laptop Accessories</a> <span><</span>
         <a href="">Smart Phones</a>
       </div>
     </section>
@@ -91,9 +91,9 @@
                 <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> Payment method</h2> <hr>
                 <form action="">
                 <div>
-                <input type="radio" name="payment"> <label for="">Payment on delivery</label>
+                <input type="radio" name="payment" id="payment-opt1" checked> <label for="payment-opt1">Payment on delivery</label>
                 <p>With Cash, Bank transfers or Cards</p> <br>
-                <input type="radio" name="payment"> <label for="">Cards</label>
+                <input type="radio" name="payment" id="payment-opt2"> <label for="payment-opt2">Cards</label>
                 <p>Payment with Cards, Bank transfer or USSD</p>
                 <span>You will be redirected to a secure checkout page </span>
                 </div>
@@ -103,29 +103,32 @@
 
         <div class="voucher">
             <h3>Voucher code</h3>
-            <h4>TR34567</h4>
+            <h4><span>TR34567</span> <i class="fa fa-check" aria-hidden="true"></i></h4>
             <p>*Voucher NGN 3,OOO has been used</p>
             <button>Submit</button>
         </div>
     </div>
+
     <div class="checkout-right">
         <div class="cart">
             <h2>Carts</h2>
-            <div>
-                <div>
+            <div class="cart-product">
+                <div class="product-img">
                     <img src="img/featured-2.png" alt="">
                     <p><i class="fa fa-trash-o" aria-hidden="true"></i>REMOVE</p>
                 </div>
-                <div>
+                <div class="cart-text">
                     <div>
                         <h3>Dell XPS 17</h3>
                         <h4>NGN 230,000</h4>
-                        <p>Quantity : 1</p>
+                        <p>Quantity : <span>1</span></p>
                     </div>
-                    <input type="number" value="1">
+                    <div class="add-sub">
+                      <h5>+</h5> <p>1</p> <h5>-</h5>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="cart-price">
                 <div>
                     <h5>Subtotal</h5> <h5>NGN 229,180.00 </h5>
                 </div>
@@ -137,16 +140,17 @@
                     <h5>Delivery Charge</h5> <h5>NGN 2,180.00</h5>
                 </div>
                 <div>
-                    <h5>Voucher used</h5> <h5>_NGN 3,000.00</h5>
+                    <h5>Voucher used</h5> <span>_NGN 3,000.00</span>
                 </div>
                 <button>Pay NGN 229,180</button>
             </div>
         </div>
 
-        <div class="Delivery">
-            <h2>Delivery</h2>
+        <div class="delivery">
+            <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> Delivery</h2>
             <hr>
-            <input type="radio"> <label for="">Pickup station (NGN 780) <br> Delivery between 4-6 days </label> <br>
+            <input type="radio" id="delivery" name="deli"> <label for="delivery">Pickup station (NGN 780)</label>
+            <p>Delivery between 4-6 days</p> <br>
 
             <div class="station">
                 <span class="station-up"><p>Pickup station</p> <p><a href="">Select pickup station ></a></p></span><hr>
@@ -158,9 +162,18 @@
                     </span>
                 </span>
             </div>
-            <input type="radio"> <label for="">Cards <br> Payment with Cards, Bank transfer or USSD</label>
-            <p>You will be redirected to a secure checkout page </p>
-            <button>CONFIRM PERSONAL DETAILS</button>
+  
+            <input type="radio" id="del" name="deli" checked> <label for="del">Door delivery </label>
+            <div class="door">
+              <div class="door-sec">
+                <input type="checkbox" id="check1" name="checks" class="checkbox-round "><label for="check1">PRO delivery (NGN 2,180)</label>
+                <p>Delivery between 2-3 days</p>
+                <hr>
+                <input type="checkbox" class="checkbox-round" id="check2"><label for="check2" name="checks">Standard delivery (NGN 1,090)</label>
+                <p>Delivery between 4-6 days</p>
+              </div>
+              <button>CONFIRM PERSONAL DETAILS</button>
+            </div>
         </div>
     </div>
   </main>
