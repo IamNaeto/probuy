@@ -1,9 +1,16 @@
+// Hamburger
+const hamMenu = document.querySelector(".hamburger-menu");
+const offScreenMenu = document.querySelector(".nav-links");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+
 // Nav Bar Scrolling Change
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".nav");
   navbar.classList.toggle("scrolled", window.scrollY > 0);
 })
-
 
 //  Owl Carousel
  $(document).ready(function() {
@@ -33,19 +40,8 @@ window.addEventListener("scroll", function () {
     $(".fa-arrow-circle-left").click(function() {
       owl.trigger("prev.owl.carousel");
     });
-
     // Handle right arrow click
     $(".fa-arrow-circle-right").click(function() {
       owl.trigger("next.owl.carousel");
     });
   });
-
-
-// Hamburger script start
-const hamMenu = document.querySelector(".hamburger-menu");
-const offScreenMenu = document.querySelector(".nav-links");
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
-// Hamburger script end
