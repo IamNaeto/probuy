@@ -35,6 +35,7 @@ a {
     justify-content: space-between;
     padding: 20px 8%;
     background-color: var(--primary-bg-clr);
+    box-shadow: 2px 1px 2px #fdfdfd;
     color: var(--primary-color);
     z-index: 4;
   }
@@ -65,12 +66,12 @@ a {
     flex-direction: column;
   }
 
-  header .care .dir a{
-    width: 50px;
+  header .care .dir .text{
+    width: 80px;
   }
 
   header .care .care2{
-    margin: 0 20px;
+    margin: 0 15px;
   }
 
   /* main summary section styling */
@@ -305,11 +306,11 @@ a {
   .success-pop{
     position: absolute;
     padding: 2%;
-    width: 50%;
+    width: 40%;
     background-color: #fdfdfd;
     border: 2px solid var(--primary-bg-clr);
     border-radius: 0.5rem;
-    bottom: 50px;
+    bottom: 60px;
     left: 350px;
     display: none;
   }
@@ -336,17 +337,17 @@ a {
   }
 
   .success-box h3{
-    font-size: 2.1875rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.01563rem;
     color: #2E8B57;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .success-box h2{
-    font-size: 2.1875rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -354,11 +355,11 @@ a {
     background-color: var(--primary-bg-clr);
     padding: 8px 15px;
     border-radius: 0.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .success-box p{
-    font-size: 1.3125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -379,3 +380,128 @@ a {
     .success-pop a:hover{
       color: var(--btn-pri-bg)
     }
+
+    /* Media query */
+    @media screen and (max-width: 1042px) {
+      header{
+        padding: 20px 3%;
+      }
+      .order-summary{
+        padding: 20px 3%;
+      }
+      footer{
+        padding: 0 3% 50px;
+      }
+
+      .success-pop{
+        width: 50%;
+        left: 280px;
+      }
+    }
+
+    @media screen and (max-width: 914px) {
+      header .hero-img{
+        width: 100px;
+      }
+
+      header .hero-img img{
+        width: 100%;
+      }
+
+      header h1{
+        font-size: 21px;
+      }
+
+      .confirm-order .order-container p, .confirm-order .order-container span{
+        font-size: 1rem;
+        margin: 8px 0;
+      }
+
+      .success-pop{
+        width: 60%;
+        left: 150px;
+        bottom: 80px;
+      }
+    }
+
+    @media screen and (max-width: 730px) {
+      header h1{
+        display: none;
+      }
+
+      header .care .text{
+        display: none;
+      } 
+      .order-summary{
+        flex-direction: column;
+        top: 80px;
+      }
+
+      .order-cart .delivery-order .address-container h2{
+        font-size: 18px;
+      }
+
+      .order-cart .delivery-order .address-container p{
+        margin-right: 5px;
+       }
+
+      .order-cart{
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .confirm-order{
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .order-cart .delivery-order{
+        margin-bottom: 20px;
+      }
+
+      .product-order .image{
+        width: 30%;
+       }
+
+       .success-pop{
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        left: 28px;
+      }
+    }
+
+    @media screen and (max-width: 500px){
+      .success-box .fa{
+        font-size: 40px;
+      }
+    
+      .success-box i{
+        margin-top: 30px;
+      }
+    
+      .success-box h3{
+        font-size: 20px;
+      }
+    
+      .success-box h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+    
+      .success-box p{
+        font-size: 0.875rem;
+      }
+    
+      .success-pop a{
+        font-size: 0.875rem;
+      }
+
+      .success-pop{
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        left: 18px;
+      }
+    
+    } 
