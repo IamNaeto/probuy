@@ -1,3 +1,12 @@
+// Success Popup
+
+const confirmBtn = document.querySelector("#confirm-btn")
+const successPop = document.querySelector(".success-pop")
+
+confirmBtn.addEventListener("click", ()=>{
+  successPop.style.display = "block"
+})
+
 // Hamburger
 const hamMenu = document.querySelector(".hamburger-menu");
 const offScreenMenu = document.querySelector(".nav-links");
