@@ -39,7 +39,7 @@ hopUp.addEventListener("click", (e) => {
   
     if (!isEmpty) {
         hopPrompt.textContent = ""
-      window.location = '/login.html';
+      window.location = '../html/login.html';
     }
   });
   
