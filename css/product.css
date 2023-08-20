@@ -3,6 +3,14 @@ body {
   color: #333;
 }
 
+.access-box span {
+  margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 0.00938rem;
+}
+
 .checkout-nav {
   position: fixed;
   width: 100%;

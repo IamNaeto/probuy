@@ -933,7 +933,8 @@ footer .partners h1 {
     width: 95%;
   }
   .hero-content button{
-    width: 70%;
+    width: 100%;
+    padding: 15px 50px;
   }
   
 
